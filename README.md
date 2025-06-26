@@ -8,11 +8,10 @@ You don't need to worry about all the other files here, but you can optionally e
 
 Any questions/problems, email <o.thurley@leeds.ac.uk>
 
-## 🌐 View Your Project as a standalone page
+## 🌐 View Your Project Online
 
-1. Go to your repository **Settings** → **Pages**
-2. Under **Source**, select **"GitHub Actions"**
-3. Click **Save**
-4. Your project will be available at: `https://[your-username].github.io/[repository-name]`
+Your project will automatically be deployed to GitHub Pages when you push your code!
 
-Your project will automatically redeploy whenever you push changes to your `sketch.js` file!
+Your live project will be available at: `https://[your-username].github.io/[repository-name]`
+
+The deployment happens automatically - no setup required! Just push your code and wait a few minutes for it to go live.
