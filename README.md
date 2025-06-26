@@ -7,3 +7,12 @@
 You don't need to worry about all the other files here, but you can optionally edit this README if you want to add any introduction, notes or explanations.
 
 Any questions/problems, email <o.thurley@leeds.ac.uk>
+
+## 🌐 View Your Project as a standalone page
+
+1. Go to your repository **Settings** → **Pages**
+2. Under **Source**, select **"GitHub Actions"**
+3. Click **Save**
+4. Your project will be available at: `https://[your-username].github.io/[repository-name]`
+
+Your project will automatically redeploy whenever you push changes to your `sketch.js` file!
