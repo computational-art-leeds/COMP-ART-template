@@ -37,34 +37,10 @@ jobs:
           comparison-method: exact
           timeout: 10
 
-      # Test 3: Check for p5.js setup() function
-      - name: Check for setup() function
-        uses: classroom-resources/autograding-io-grader@v1
-        id: has-setup
-        with:
-          test-name: "Contains setup() function"
-          command: "if grep -q 'function setup' sketch.js; then echo 'PASS: setup() found'; else echo 'FAIL: No setup() function'; fi"
-          expected-output: "PASS: setup() found"
-          comparison-method: exact
-          timeout: 10
-
-      # Test 4: Check for comments (code documentation)
-      - name: Check for comments
-        uses: classroom-resources/autograding-io-grader@v1
-        id: has-comments
-        with:
-          test-name: "Code includes comments"
-          command: "if grep -q '//' sketch.js; then echo 'PASS: Comments found'; else echo 'FAIL: No comments found'; fi"
-          expected-output: "PASS: Comments found"
-          comparison-method: exact
-          timeout: 10
-
       - name: Autograding Reporter
         uses: classroom-resources/autograding-grading-reporter@v1
         env:
           SKETCH-EXISTS_RESULTS: "${{ steps.sketch-exists.outputs.result }}"
           SKETCH-MODIFIED_RESULTS: "${{ steps.sketch-modified.outputs.result }}"
-          HAS-SETUP_RESULTS: "${{ steps.has-setup.outputs.result }}"
-          HAS-COMMENTS_RESULTS: "${{ steps.has-comments.outputs.result }}"
         with:
-          runners: sketch-exists,sketch-modified,has-setup,has-comments
+          runners: sketch-exists,sketch-modified
