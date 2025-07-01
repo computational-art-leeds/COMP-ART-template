@@ -4,8 +4,8 @@
 2. _Make sure you regularly save your work._
 3. When you're ready to submit it, copy your code into the [sketch.js](sketch.js) file by **Editing** it (pencil icon, or `e`), then **Commit changes...** when ready.
 
- >![NOTE]
- >You don't need to worry about all the other files here, but you can optionally edit this README if you want to add any introduction, notes or explanations.
+> [NOTE]
+> You don't need to worry about all the other files here, but you can optionally edit this README if you want to add any introduction, notes or explanations.
 
 Any questions/problems, email <o.thurley@leeds.ac.uk>
 
